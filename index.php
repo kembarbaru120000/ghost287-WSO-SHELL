@@ -7,6 +7,7 @@ if (empty($q)) {
 $canonical = str_replace(' ', '-', $q);
 $brand = strtoupper($q);
 ?>
+
 <!doctype html>
   <html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"
     data-authenticated-account>
