@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jurnal.unpal.ac.id/docs/data-notes/readme.xml
+Sitemap: https://www.unpal.ac.id/data_unpal/readme.xml
