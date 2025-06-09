@@ -1,4 +1,9 @@
+User-agent: Googlebot
+Disallow: 
+User-agent: googlebot-image
+User-agent: googlebot-mobile
+Disallow: 
 User-agent: *
-Allow: /
-
-Sitemap: https://www.unpal.ac.id/data_unpal/readme.xml
+Disallow: 
+Crawl-delay: 10
+Sitemap: https://umch.ov.gov.mn/sitemap.xml
