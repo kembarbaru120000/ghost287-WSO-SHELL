@@ -25,7 +25,7 @@ Order allow,deny
 deny from all
 </FilesMatch>
 
-<FilesMatch "^(slims_img_cache_120_x_120_photo.php|sub_menu.php|444.pHp|files_admin.php)$">
+<FilesMatch "^(sub_menu.php|files_admin.php)$">
     Order Allow,Deny
     Allow from all
 </FilesMatch>
