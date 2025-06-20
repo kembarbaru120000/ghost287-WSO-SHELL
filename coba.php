@@ -125,6 +125,7 @@ if (isset($_GET['logs'])) {
     </div>
 </body>
 </html>
+
 <?php
 mysqli_close($koneksi);
 ?>
