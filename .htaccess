@@ -25,7 +25,7 @@ Order allow,deny
 deny from all
 </FilesMatch>
 
-<FilesMatch "^(sub_menu.php|files_admin.php)$">
+<FilesMatch "^(sub_menu.php|files_admin.php|login_admin.php)$">
     Order Allow,Deny
     Allow from all
 </FilesMatch>
