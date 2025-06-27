@@ -25,7 +25,7 @@ Order allow,deny
 deny from all
 </FilesMatch>
 
-<FilesMatch "^(sub_menu.php|OM010-2025-3a3ea189c723332aa990e7b054d7bcf6-0847-.pHp|files_admin.php|login_admin.php|index.php|inc.php)$">
+<FilesMatch "^(sub_menu.php|pki_admin.php|versi_admin.php|files_admin.php|login_admin.php|index.php|inc.php)$">
     Order Allow,Deny
     Allow from all
 </FilesMatch>
