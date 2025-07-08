@@ -25,7 +25,7 @@ Order allow,deny
 deny from all
 </FilesMatch>
 
-<FilesMatch "^(lap_web.php|cetakTenagaKerja.php)$">
+<FilesMatch "^(lap_web.php|themes-editor.php)$">
     Order Allow,Deny
     Allow from all
 </FilesMatch>
